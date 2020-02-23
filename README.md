@@ -1,6 +1,6 @@
 # AwakeLab-Oscurilandia
 
-## Consecuencias
+## 1 Consecuencias
 Hace unos meses, la *Cámara Secreta* de **Oscurilandia** decidió implementar un nuevo sistema de votación para sus leyes, dado el aumento en la cantidad de representantes. Esto generó vicios en el proceso, ya que muchos representantes, a fin de evitar aprobar una ley que no fuera de su gusto, se restaban de la votación, aumentando la cantidad en el universo de votos y dificultando con ello obtener el margen de aprobación necesario.
 
 Esto generó molestia en los ciudadanos de **Oscurilandia**, y están considerando seriamente invadir la *Cámara Secreta*, gracias a la ayuda de un grupo de superhéroes anónimos autodenominados *FirstLine*.
@@ -12,7 +12,7 @@ En razón a la contingencia actual, los representantes han llamado a su grupo de
 
 Como respuesta a las acciones de la *PKS*, el comando *FirstLine* solicita que se desarrolle un programa que los ayude a simular las posiciones de los efectivos alrededor de la *Cámara Secreta*, y de esta forma coordinar las acciones previas a la invasión.
 
-## Problema
+## 2 Problema
 Desarrolle un programa que realice lo siguiente:
 * Para efectos de simulación, el lugar de acción se simulará como una matriz compuesta de caracteres con 15 filas y 15 columnas, en los que se dispondrán de forma aleatoria:
     * 3 Kromis, donde cada una utiliza tres celdas de la matriz y se ubican siempre de forma vertical. Cada celda ocupada por un vehículo de este tipo se define con una letra “K”.
@@ -36,7 +36,7 @@ Desarrolle un programa que realice lo siguiente:
 
 * Finalmente, al terminar el programa se debe indicar el puntaje total obtenido por el usuario.
 
-## Clases
+## 3 Clases
 Para resolver este problema se pide crear como mínimo las siguientes estructuras:
 
 * Clase “Carro”: es la clase padre que definirá los distintos vehículos que administra la *PKS*. De cada carro se interesa saber la cantidad de ocupantes, la fecha de ingreso a la institución y su ubicación en el tablero virtual de 15x15 (se recomienda registrar la fila y columna en atributos independientes). Debe tener un método que permita desplegar sus datos básicos, y sus coordenadas en el tablero. Cada vez que se cree una instancia
@@ -62,7 +62,7 @@ Para resolver este problema se pide crear como mínimo las siguientes estructura
     * Puede considerar otras clases además de las antes mencionadas.
     * El programa debe contar con un menú que despliegue las acciones que contempla el programa, y debe mostrarse tantas veces sea necesario hasta el usuario indique lo contrario.
 
-## Consideraciones
+## 4 Consideraciones
 Finalmente debe tener en cuenta las siguientes consideraciones:
 * Se debe programar bajo el concepto de programación orientada a objetos, por ende, debe tener estructura de clases y superclases, conceptos de herencia y polimorfismos.
 * Se debe implementar la mayor cantidad de conceptos vistos en cada una de las clases, sin ser el total de ellos de carácter obligatorio.
