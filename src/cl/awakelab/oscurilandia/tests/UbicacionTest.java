@@ -15,17 +15,23 @@ class UbicacionTest {
     
     @BeforeEach
     void setUp() throws Exception {
-        fila = (int) Math.round(Math.random() * 20);
-        columna = (int) Math.round(Math.random() * 20);
+        fila = (int) (Math.random() * 20);
+        
+        // Para efectos de pruebas, evitamos que los valores de fila y columna sean iguales
+        do {
+            columna = (int) (Math.random() * 20);
+        } while(columna == fila);
         
         ubicacion = new Ubicacion(fila, columna);
     }
     
+    // Verificar que el valor que me devuelve es el de fila
     @Test
     void shouldReturnFila() { 
         assertEquals(fila, ubicacion.getFila());
     }
     
+    // Verificar que el valor que cambia es el de fila
     @Test
     void shouldChangeFila() {
         int fila = -1;
@@ -34,11 +40,13 @@ class UbicacionTest {
         assertEquals(fila, ubicacion.getFila());
     }
     
+    // Verificar que el valor que me devuelve es el de columna
     @Test
     void shouldReturnColumna() {
         assertEquals(columna, ubicacion.getColumna());
     }
     
+    // Verificar que el valor que cambia es columna
     @Test
     void shouldChangeColumna() {
         int columna = -1;
