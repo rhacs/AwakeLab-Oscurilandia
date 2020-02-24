@@ -15,7 +15,8 @@ class KromiTest {
      private String marca;
      private Kromi micro;
      private Ubicacion ubicacion;
-     private 
+     private Date ingreso;
+     private int ocupantes;
      
      @BeforeEach
      void setup() throws Exception {
@@ -25,6 +26,8 @@ class KromiTest {
         micro = new Kromi(ubicacion);
         micro.setMarca(marca);
         micro.setFabricacion(fabricacion);
+        ingreso = new RandomFecha().getFecha();
+        ocupantes = (int) (Math.random() * 20 + 1);
      }
      
      
@@ -65,6 +68,14 @@ class KromiTest {
         
          assertEquals(ubicacion,micro.getUbicacion());
      }
+     
+     @Test
+     void shouldReturnIngreso() {
+         assertEquals(ingreso, micro.getIngreso());
+     }
+     
+     @test
+     void shouldChangeIngreso
      
      
      
