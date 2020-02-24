@@ -75,7 +75,9 @@ class KromiTest {
      }
      
      @test
-     void shouldChangeIngreso
+     void shouldChangeIngreso() {
+         
+     }
      
      
      
