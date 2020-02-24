@@ -29,7 +29,7 @@ class HuevoTest {
     
     @Test
     void shouldChangePuntaje() {
-        int puntaje = -1;
+        int puntaje = (int) (Math.random() * 10);
         huevo.setPuntaje(puntaje);
         
         assertEquals(puntaje, huevo.getPuntaje());
