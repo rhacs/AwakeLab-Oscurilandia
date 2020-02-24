@@ -23,11 +23,13 @@ class KromiTest {
         ubicacion = new Ubicacion(0,0);
         marca = "Chevrolet";
         fabricacion = new RandomFecha().getFecha();
+        ingreso = new RandomFecha().getFecha();
+        ocupantes = (int) (Math.random() * 20 + 1);
         micro = new Kromi(ubicacion);
         micro.setMarca(marca);
         micro.setFabricacion(fabricacion);
-        ingreso = new RandomFecha().getFecha();
-        ocupantes = (int) (Math.random() * 20 + 1);
+        micro.setIngreso(ingreso);
+        micro.setOcupantes(ocupantes);
      }
      
      
@@ -50,7 +52,7 @@ class KromiTest {
      
      @Test
      void shouldChangeMarca() {
-        String marca = "Chevrolet";
+        String marca = "Dodge";
         micro.setMarca(marca);
         
         assertEquals(marca, micro.getMarca());
@@ -74,11 +76,27 @@ class KromiTest {
          assertEquals(ingreso, micro.getIngreso());
      }
      
-     @test
+     @Test
      void shouldChangeIngreso() {
+         Date ingreso = new RandomFecha().getFecha();
+         micro.setIngreso(ingreso);
+         
+         assertEquals(ingreso, micro.getIngreso());
+     }
+     
+     @Test
+     void shouldReturnOcupates() {
+        assertEquals(ocupantes, micro.getOcupantes());
          
      }
      
+     @Test
+     void shouldChangeOcupantes() {
+        int ocupantes = (int)(Math.random() * 20 + 1);
+        micro.setOcupantes(ocupantes); 
+        
+        assertEquals(ocupantes, micro.getOcupantes());
+     }
      
      
 }
