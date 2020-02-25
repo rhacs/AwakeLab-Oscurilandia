@@ -39,8 +39,8 @@ public class Kromi extends Carro {
         return "Kromi(ubicacion: " + this.getUbicacion() + 
                 ", ingreso: '" + this.getIngreso() + 
                 "', ocupantes: " + this.getOcupantes() + ")" +
-                "Fecha de fabricacion : " + this.getFabricacion() +
-                "Marca : " + this.getMarca();
+                ", fabricacion: '" + this.getFabricacion() +
+                "', marca : '" + this.getMarca() + "')";
     }
 
     @Override
