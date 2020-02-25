@@ -24,13 +24,6 @@ public abstract class Carro {
         this.ubicaciones = new ArrayList<>();
     }
     
-//    public Carro(Ubicacion ubicacion) {
-//        this.ubicacion = ubicacion;
-//        
-//        this.ingreso = new RandomFecha().getFecha();
-//        this.ocupantes = (int) (Math.random() * 20 + 1);
-//    }
-    
     // Methods ---------------------------------------------------------------------------------
     
     public void addUbicacion(Ubicacion ubicacion) {
