@@ -1,10 +1,6 @@
 package cl.awakelab.oscurilandia.models;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import java.util.Date;
-
-import org.junit.jupiter.api.Test;
 
 import cl.awakelab.oscurilandia.helpers.RandomFecha;
 
@@ -14,41 +10,27 @@ public class Caguano extends Carro {
     private String colorConfeti;
     private Date fechaDeFabricacion;
     
-    public Caguano(Ubicacion ubicacion) {
-        super(ubicacion);
+    public Caguano() {
         this.alcanceDeTiro = (int) (Math.random()* 10);
         this.colorConfeti = "cafe"; 
         this.fechaDeFabricacion = new RandomFecha().getFecha();
-        
     }
 
     public float getAlcanceDeTiro() {
         return alcanceDeTiro;
     }
 
-
-
-    
     public void setAlcanceDeTiro(int alcanceDeTiro) {
         this.alcanceDeTiro = alcanceDeTiro;
     }
-
-
-
-
+    
     public String getColorConfeti() {
         return colorConfeti;
     }
 
-
-
-
     public void setColorConfeti(String colorConfeti) {
         this.colorConfeti = colorConfeti;
     }
-
-
-
 
     public void setFechaDeFabricacion(Date fechaDeFabricacion) {
         this.fechaDeFabricacion = fechaDeFabricacion;
@@ -65,21 +47,13 @@ public class Caguano extends Carro {
     }
 
     @Override
-        public String toString() {
+    public String toString() {
         return "carro(ubicacion: " + this.getUbicacion() +
                 ", ingreso: '" + this.getIngreso() +
                 "', ocupantes: " + this.getOcupantes() + 
                 ", alcanceDeTiro: " + this.getAlcanceDeTiro() +
                 ", colorConfeti: " + this.getColorConfeti() + ")";
-                
-                
+
     }
-
-    
-
-      
-        
-
-
 
 }

@@ -31,11 +31,12 @@ class KromiTest {
          ingreso = new RandomFecha().getFecha();
          ocupantes = (int) (Math.random() * 20 + 1);
 
-         micro = new Kromi(ubicacion);
+         micro = new Kromi();
          micro.setMarca(marca);
          micro.setFabricacion(fabricacion);
          micro.setIngreso(ingreso);
          micro.setOcupantes(ocupantes);
+         micro.setUbicacion(ubicacion);
      }
      
      @Test

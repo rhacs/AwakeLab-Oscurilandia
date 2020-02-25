@@ -33,11 +33,12 @@ class TrupallaTest {
         ingreso = new RandomFecha().getFecha();
         ocupantes = (int) (Math.random() * 20 + 1);
         
-        patrulla = new Trupalla(ubicacion);
+        patrulla = new Trupalla();
         patrulla.setArmadura(armadura);
         patrulla.setManipula(manipula);
         patrulla.setIngreso(ingreso);
-        patrulla.setOcupantes(ocupantes);  
+        patrulla.setOcupantes(ocupantes);
+        patrulla.setUbicacion(ubicacion);
     }
 
     @Test

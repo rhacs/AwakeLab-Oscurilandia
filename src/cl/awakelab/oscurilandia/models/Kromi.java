@@ -12,8 +12,7 @@ public class Kromi extends Carro {
     private Date fabricacion;
     private String marca;
 
-    public Kromi(Ubicacion ubicacion) {
-        super(ubicacion);
+    public Kromi() {
         this.fabricacion = new RandomFecha().getFecha();
         this.marca = new String("Volvo");
     }
@@ -38,7 +37,7 @@ public class Kromi extends Carro {
     public String toString() {
         return "Kromi(ubicacion: " + this.getUbicacion() + 
                 ", ingreso: '" + this.getIngreso() + 
-                "', ocupantes: " + this.getOcupantes() + ")" +
+                "', ocupantes: " + this.getOcupantes() +
                 ", fabricacion: '" + this.getFabricacion() +
                 "', marca : '" + this.getMarca() + "')";
     }

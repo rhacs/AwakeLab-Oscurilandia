@@ -2,7 +2,6 @@ package cl.awakelab.oscurilandia.tests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -31,13 +30,13 @@ class CaguanoTest {
         fechaDeFabricacion = new RandomFecha().getFecha();
         ingreso = new RandomFecha().getFecha();
         
-        caguano = new Caguano(ubicacion);
+        caguano = new Caguano();
         caguano.setColorConfeti(colorConfeti);
         caguano.setAlcanceDeTiro(alcanceDeTiro);
         caguano.setOcupantes(numeroDeOcupantes);
         caguano.setFechaDeFabricacion(fechaDeFabricacion);
         caguano.setIngreso(ingreso);
-        
+        caguano.setUbicacion(ubicacion);
     }
     
     @Test
@@ -74,25 +73,27 @@ class CaguanoTest {
         String color = "verde";
         caguano.setColorConfeti(color);
         assertEquals(color, caguano.getColorConfeti());
-  
-}
+    }
+    
     @Test
     void shouldChangeIngreso() {
         Date ingreso = new RandomFecha().getFecha();
         caguano.setIngreso(ingreso);
         assertEquals(ingreso, caguano.getIngreso());
-        
     }
+    
     @Test
     void shouldReturnnumeroDeOcupantes() {
         assertEquals(numeroDeOcupantes, caguano.getOcupantes());
     }
+    
     @Test
     void shouldChargetNumeroDeOcupantes() {
         int numeroDeOcupantes = (int)(Math.random() * 10 - 8);
         caguano.setOcupantes(numeroDeOcupantes);
         assertEquals(numeroDeOcupantes, caguano.getOcupantes());
     }
+    
     @Test
     void shouldReturnfabricacion() {
         assertEquals(fechaDeFabricacion, caguano.getFechaDeFabricacion());
@@ -104,9 +105,7 @@ class CaguanoTest {
         caguano.setFechaDeFabricacion(fecha);
 
         assertEquals(fecha, caguano.getFechaDeFabricacion());
-            
-        }
-       // TODO Auto-generated method stub
+    }
 
 }
         

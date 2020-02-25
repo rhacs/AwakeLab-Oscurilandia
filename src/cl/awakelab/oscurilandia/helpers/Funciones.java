@@ -16,7 +16,7 @@ public class Funciones {
         
         if(scanner.hasNextLine())
             scanner.nextLine();
-        
+
         return entero;
     }
     

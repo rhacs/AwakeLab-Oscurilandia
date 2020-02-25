@@ -10,9 +10,7 @@ public class Trupalla extends Carro {
     private int armadura;
     private String manipula;
     
-    public Trupalla(Ubicacion ubicacion) {
-        super(ubicacion);
-        
+    public Trupalla() {
         this.armadura = (int) (Math.random()*5 +1);
         this.manipula = new RandomNombre().getNombre();
     }
