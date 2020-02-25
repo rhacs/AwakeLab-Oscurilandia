@@ -4,47 +4,48 @@ import java.util.Date;
 
 import cl.awakelab.oscurilandia.helpers.RandomFecha;
 
+/**
+ * @author Diego Quiero
+ */
 public class Kromi extends Carro {
 
-	private Date fabricacion;
-	private String marca;
-	
-	public Kromi(Ubicacion ubicacion) {
-		super(ubicacion);
-		this.fabricacion = new RandomFecha().getFecha();
-		this.marca = new String("Volvo");
-	}
-	
-	public Date getFabricacion() {
-		return fabricacion;
-	}
+    private Date fabricacion;
+    private String marca;
 
-	public void setFabricacion(Date fabricacion) {
-		this.fabricacion = fabricacion;
-	}
+    public Kromi(Ubicacion ubicacion) {
+        super(ubicacion);
+        this.fabricacion = new RandomFecha().getFecha();
+        this.marca = new String("Volvo");
+    }
 
-	public String getMarca() {
-		return marca;
-	}
+    public Date getFabricacion() {
+        return fabricacion;
+    }
 
-	public void setMarca(String marca) {
-		this.marca = marca;
-	}
+    public void setFabricacion(Date fabricacion) {
+        this.fabricacion = fabricacion;
+    }
 
-	@Override
-	public String toString() {
-		 return "Kromi(ubicacion: " + this.getUbicacion() + 
-	                ", ingreso: '" + this.getIngreso() + 
-	                "', ocupantes: " + this.getOcupantes() + ")" +
-	                "Fecha de fabricacion : " + this.getFabricacion() +
-	                "Marca : " + this.getMarca();
-		
-	}
+    public String getMarca() {
+        return marca;
+    }
 
-	@Override
-	public String getTipo() {
-		
-		return "Kromi";
-	}
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    @Override
+    public String toString() {
+        return "Kromi(ubicacion: " + this.getUbicacion() + 
+                ", ingreso: '" + this.getIngreso() + 
+                "', ocupantes: " + this.getOcupantes() + ")" +
+                "Fecha de fabricacion : " + this.getFabricacion() +
+                "Marca : " + this.getMarca();
+    }
+
+    @Override
+    public String getTipo() {
+        return "Kromi";
+    }
 
 }

@@ -1,4 +1,4 @@
-package cl.awakelab.oscurilandia.models;
+package cl.awakelab.oscurilandia.tests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -9,7 +9,12 @@ import org.junit.jupiter.api.Test;
 
 import cl.awakelab.oscurilandia.helpers.RandomFecha;
 import cl.awakelab.oscurilandia.helpers.RandomNombre;
+import cl.awakelab.oscurilandia.models.Trupalla;
+import cl.awakelab.oscurilandia.models.Ubicacion;
 
+/**
+ * @author Diego Quiero
+ */
 class TrupallaTest {
 
     private int armadura;
@@ -27,6 +32,7 @@ class TrupallaTest {
         manipula = new RandomNombre().getNombre();
         ingreso = new RandomFecha().getFecha();
         ocupantes = (int) (Math.random() * 20 + 1);
+        
         patrulla = new Trupalla(ubicacion);
         patrulla.setArmadura(armadura);
         patrulla.setManipula(manipula);
