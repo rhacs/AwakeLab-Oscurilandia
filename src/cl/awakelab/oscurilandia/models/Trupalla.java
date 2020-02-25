@@ -1,8 +1,10 @@
 package cl.awakelab.oscurilandia.models;
 
-
 import cl.awakelab.oscurilandia.helpers.RandomNombre;
 
+/**
+ * @author Diego Quiero
+ */
 public class Trupalla extends Carro {
 
     private int armadura;
@@ -10,6 +12,7 @@ public class Trupalla extends Carro {
     
     public Trupalla(Ubicacion ubicacion) {
         super(ubicacion);
+        
         this.armadura = (int) (Math.random()*5 +1);
         this.manipula = new RandomNombre().getNombre();
     }
@@ -32,16 +35,15 @@ public class Trupalla extends Carro {
 
     @Override
     public String toString() {
-             return "Trupalla(ubicacion: " + this.getUbicacion() + 
-                    ", ingreso: '" + this.getIngreso() + 
-                    "', ocupantes: " + this.getOcupantes() + ")" +
-                    "Armadura : " + this.getArmadura() +
-                    "Manipula : " + this.getManipula();
-            
+        return "Trupalla(ubicacion: " + this.getUbicacion() + 
+                ", ingreso: '" + this.getIngreso() + 
+                "', ocupantes: " + this.getOcupantes() +
+                ", armadura: " + this.getArmadura() +
+                ", manipula: '" + this.getManipula() + "')";
     }
+    
     @Override
     public String getTipo() {
-        
         return "Trupalla";
     }
 

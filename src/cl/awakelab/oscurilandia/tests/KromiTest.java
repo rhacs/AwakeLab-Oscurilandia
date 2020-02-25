@@ -1,4 +1,4 @@
-package cl.awakelab.oscurilandia.models;
+package cl.awakelab.oscurilandia.tests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,7 +8,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import cl.awakelab.oscurilandia.helpers.RandomFecha;
+import cl.awakelab.oscurilandia.models.Kromi;
+import cl.awakelab.oscurilandia.models.Ubicacion;
 
+/**
+ * @author Diego Quiero
+ */
 class KromiTest {
 
      private Date fabricacion;
@@ -20,42 +25,43 @@ class KromiTest {
      
      @BeforeEach
      void setup() throws Exception {
-        ubicacion = new Ubicacion(0,0);
-        marca = "Chevrolet";
-        fabricacion = new RandomFecha().getFecha();
-        ingreso = new RandomFecha().getFecha();
-        ocupantes = (int) (Math.random() * 20 + 1);
-        micro = new Kromi(ubicacion);
-        micro.setMarca(marca);
-        micro.setFabricacion(fabricacion);
-        micro.setIngreso(ingreso);
-        micro.setOcupantes(ocupantes);
+         ubicacion = new Ubicacion(0,0);
+         marca = "Chevrolet";
+         fabricacion = new RandomFecha().getFecha();
+         ingreso = new RandomFecha().getFecha();
+         ocupantes = (int) (Math.random() * 20 + 1);
+
+         micro = new Kromi(ubicacion);
+         micro.setMarca(marca);
+         micro.setFabricacion(fabricacion);
+         micro.setIngreso(ingreso);
+         micro.setOcupantes(ocupantes);
      }
-     
      
      @Test
      void shouldReturnfabricacion() {
-        assertEquals(fabricacion, micro.getFabricacion());
+         assertEquals(fabricacion, micro.getFabricacion());
      }
      
      @Test
      void shouldChangeFabricacion() {
-        Date fecha = new RandomFecha().getFecha();
-        micro.setFabricacion(fecha);
-        assertEquals(fecha, micro.getFabricacion());
+         Date fecha = new RandomFecha().getFecha();
+         micro.setFabricacion(fecha);
+
+         assertEquals(fecha, micro.getFabricacion());
      }
      
      @Test 
      void shouldReturnMarca() {
-        assertEquals(marca, micro.getMarca());
+         assertEquals(marca, micro.getMarca());
      }
      
      @Test
      void shouldChangeMarca() {
-        String marca = "Dodge";
-        micro.setMarca(marca);
-        
-        assertEquals(marca, micro.getMarca());
+         String marca = "Dodge";
+         micro.setMarca(marca);
+
+         assertEquals(marca, micro.getMarca());
      }
      
      @Test
@@ -67,7 +73,7 @@ class KromiTest {
      void shouldChangeUbicacion() {
          Ubicacion ubicacion = new Ubicacion(1,4);
          micro.setUbicacion(ubicacion);
-        
+
          assertEquals(ubicacion,micro.getUbicacion());
      }
      
@@ -80,22 +86,21 @@ class KromiTest {
      void shouldChangeIngreso() {
          Date ingreso = new RandomFecha().getFecha();
          micro.setIngreso(ingreso);
-         
+
          assertEquals(ingreso, micro.getIngreso());
      }
      
      @Test
      void shouldReturnOcupates() {
-        assertEquals(ocupantes, micro.getOcupantes());
-         
+         assertEquals(ocupantes, micro.getOcupantes());
      }
      
      @Test
      void shouldChangeOcupantes() {
-        int ocupantes = (int)(Math.random() * 20 + 1);
-        micro.setOcupantes(ocupantes); 
-        
-        assertEquals(ocupantes, micro.getOcupantes());
+         int ocupantes = (int)(Math.random() * 20 + 1);
+         micro.setOcupantes(ocupantes); 
+
+         assertEquals(ocupantes, micro.getOcupantes());
      }
      
      
