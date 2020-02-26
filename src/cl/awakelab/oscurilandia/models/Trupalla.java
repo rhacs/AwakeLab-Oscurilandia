@@ -58,7 +58,7 @@ public class Trupalla extends Carro {
      */
     @Override
     public String toString() {
-        return "Trupalla(ubicacion: " + this.getUbicacion() + 
+        return "Trupalla(ubicacion: " + this.getUbicaciones() + 
                 ", ingreso: '" + this.getIngreso() + 
                 "', ocupantes: " + this.getOcupantes() +
                 ", armadura: " + this.getArmadura() +

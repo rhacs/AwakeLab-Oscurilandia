@@ -202,8 +202,9 @@ public class Tablero {
      * o no ocupada y actuando según corresponda
      * @param fila fila
      * @param columna columna
+     * @return Celda afectada
      */
-    public void arrojarHuevo(int fila, int columna) {
+    public String arrojarHuevo(int fila, int columna) {
         int puntaje = 0;
         String celda = tablero[fila][columna];
         
@@ -237,6 +238,7 @@ public class Tablero {
 
         tablero[fila][columna] = "H";
         this.puntaje += puntaje;
+        return celda;
     }
     
     /**
@@ -315,6 +317,32 @@ public class Tablero {
      */
     public int getPuntaje() {
         return this.puntaje;
+    }
+    
+    /**
+     * Devuelve el listado de carros generados por la aplicacion
+     * @return carros
+     */
+    public List<Carro> getCarros() {
+        return this.carros;
+    }
+    
+    /**
+     * Devuelve el listado de huevos lanzados por el usuario
+     * @return huevos
+     */
+    public List<Huevo> getHuevos() {
+        return this.huevos;
+    }
+    
+    // Setter ----------------------------------------------------------------------------------
+    
+    /**
+     * Cambia el valor de la variable cheating
+     * @param cheating nuevo valor
+     */
+    public void setCheating(boolean cheating) {
+        this.cheating = cheating;
     }
     
     // Inheritances ----------------------------------------------------------------------------

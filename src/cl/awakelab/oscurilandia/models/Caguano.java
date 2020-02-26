@@ -86,7 +86,7 @@ public class Caguano extends Carro {
      */
     @Override
     public String toString() {
-        return "carro(ubicacion: " + this.getUbicacion() +
+        return "carro(ubicacion: " + this.getUbicaciones() +
                 ", ingreso: '" + this.getIngreso() +
                 "', ocupantes: " + this.getOcupantes() + 
                 ", alcanceDeTiro: " + this.getAlcanceDeTiro() +

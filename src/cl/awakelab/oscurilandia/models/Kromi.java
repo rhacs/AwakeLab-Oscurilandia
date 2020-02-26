@@ -60,7 +60,7 @@ public class Kromi extends Carro {
      */
     @Override
     public String toString() {
-        return "Kromi(ubicacion: " + this.getUbicacion() + 
+        return "Kromi(ubicacion: " + this.getUbicaciones() + 
                 ", ingreso: '" + this.getIngreso() + 
                 "', ocupantes: " + this.getOcupantes() +
                 ", fabricacion: '" + this.getFabricacion() +

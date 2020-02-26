@@ -115,7 +115,7 @@ public abstract class Carro {
      */
     @Override
     public String toString() {
-        return "Carro(ubicacion: " + this.getUbicacion() + 
+        return "Carro(ubicacion: " + this.getUbicaciones() + 
                 ", ingreso: '" + this.getIngreso() + 
                 "', ocupantes: " + this.getOcupantes() + ")";
     }
