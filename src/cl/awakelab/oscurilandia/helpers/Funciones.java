@@ -51,6 +51,7 @@ public class Funciones {
      * los valores limiteInferior y limiteSuperior (incluidos)
      * @param scanner Scanner que se utilizará
      * @param limiteInferior Delimitante inferior
+     * @param limiteSuperior Delimitante superior
      * @return Número válido entre limiteInferior y limiteSuperior (incluidos)
      */
     public static int pedirNumero(Scanner scanner, int limiteInferior, int limiteSuperior) {

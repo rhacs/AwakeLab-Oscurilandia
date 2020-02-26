@@ -23,7 +23,7 @@ public class Tablero {
 
     /** Cantidad de Filas que tendrá el tablero (Valor por defecto: {@value #FILAS}) */
     public final static int FILAS = 15;
-    /** Cantidad de Columnas que tendrá el tablero (Valor por defecto: {@value #COLUMNAS} */
+    /** Cantidad de Columnas que tendrá el tablero (Valor por defecto: {@value #COLUMNAS}) */
     public final static int COLUMNAS = 15;
     
     /** Cantidad de espacios verticales que ocupará el vehículo Kromi */

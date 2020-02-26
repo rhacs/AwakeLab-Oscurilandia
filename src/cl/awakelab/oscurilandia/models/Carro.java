@@ -35,7 +35,7 @@ public abstract class Carro {
     
     /**
      * Agrega una ubicación al listado de ubicaciones
-     * @param ubicacion
+     * @param ubicacion nuevo valor
      */
     public void addUbicacion(Ubicacion ubicacion) {
         this.ubicaciones.add(ubicacion);

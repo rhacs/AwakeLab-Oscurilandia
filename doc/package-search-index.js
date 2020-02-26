@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"cl.awakelab.oscurilandia.controllers"}]
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"cl.awakelab.oscurilandia"},{"l":"cl.awakelab.oscurilandia.controllers"},{"l":"cl.awakelab.oscurilandia.helpers"},{"l":"cl.awakelab.oscurilandia.models"},{"l":"cl.awakelab.oscurilandia.tests"}]

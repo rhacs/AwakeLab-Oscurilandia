@@ -1,1 +1,5 @@
+cl.awakelab.oscurilandia
 cl.awakelab.oscurilandia.controllers
+cl.awakelab.oscurilandia.helpers
+cl.awakelab.oscurilandia.models
+cl.awakelab.oscurilandia.tests
