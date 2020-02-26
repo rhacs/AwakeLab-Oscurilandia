@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"cl.awakelab.oscurilandia.controllers","l":"Tablero"}]

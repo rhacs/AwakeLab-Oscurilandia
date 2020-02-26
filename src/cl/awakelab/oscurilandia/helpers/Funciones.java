@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class Funciones {
 
+    /**
+     * Verifica que el número ingresado por el usuario sea un número válido
+     * @param scanner Scanner que se utilizará para la operación
+     * @return Un número válido
+     */
     public static int pedirNumero(Scanner scanner) {
         int entero;
         
@@ -20,6 +25,13 @@ public class Funciones {
         return entero;
     }
     
+    /**
+     * Verifica que el número ingresado por el usuario sea un número válido y que sea mayor o igual
+     * al límite inferior
+     * @param scanner Scanner que se utilizará
+     * @param limiteInferior Delimitante inferior
+     * @return Número válido mayor o igual a limiteInferior
+     */
     public static int pedirNumero(Scanner scanner, int limiteInferior) {
         int entero;
         
@@ -34,6 +46,13 @@ public class Funciones {
         return entero;
     }
     
+    /**
+     * Verifica que el número ingresado por el usuario sea un número válido y se encuentre entre
+     * los valores limiteInferior y limiteSuperior (incluidos)
+     * @param scanner Scanner que se utilizará
+     * @param limiteInferior Delimitante inferior
+     * @return Número válido entre limiteInferior y limiteSuperior (incluidos)
+     */
     public static int pedirNumero(Scanner scanner, int limiteInferior, int limiteSuperior) {
         int entero;
         

@@ -4,6 +4,9 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
+/**
+ * Genera una fecha aleatoria
+ */
 public class RandomFecha {
 
     // Attributes ------------------------------------------------------------------------------
@@ -12,6 +15,9 @@ public class RandomFecha {
     
     // Constructors ----------------------------------------------------------------------------
     
+    /**
+     * Constructor y generador de la fecha aleatoria
+     */
     public RandomFecha() {
         GregorianCalendar calendario = new GregorianCalendar();
         
@@ -26,18 +32,32 @@ public class RandomFecha {
     
     // Methods ---------------------------------------------------------------------------------
     
+    /**
+     * Genera un valor aleatorio entre inicio y fin
+     * @param inicio valor mínimo
+     * @param fin valor máximo
+     * @return valor aleatorio
+     */
     private int aleatorio(int inicio, int fin) {
         return inicio + (int) Math.round(Math.random() * (fin - inicio));
     }
     
     // Getters ---------------------------------------------------------------------------------
     
+    /**
+     * Devuelve la fecha generada aleatoriamente
+     * @return fecha
+     */
     public Date getFecha() {
         return this.fecha;
     }
     
     // Inheritances ----------------------------------------------------------------------------
     
+    /**
+     * Muestra el contenido del objeto
+     * @return contenido
+     */
     @Override
     public String toString() {
         return "RandomFecha(fecha: '" + this.getFecha().toString() + "')";
