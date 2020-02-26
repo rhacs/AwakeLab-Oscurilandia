@@ -1,5 +1,7 @@
 # AwakeLab-Oscurilandia
 
+<p align="center"><img alt="Diagrama UML" src="resources/Diagrama.png"></p>
+
 ## 1 - Consecuencias
 Hace unos meses, la *Cámara Secreta* de **Oscurilandia** decidió implementar un nuevo sistema de votación para sus leyes, dado el aumento en la cantidad de representantes. Esto generó vicios en el proceso, ya que muchos representantes, a fin de evitar aprobar una ley que no fuera de su gusto, se restaban de la votación, aumentando la cantidad en el universo de votos y dificultando con ello obtener el margen de aprobación necesario.
 
